@@ -5,13 +5,12 @@
   <title>Basketball Team</title>
  </head>
  <body>
-  <h1><%= @name %></h1>
-  <h2><%= @coach %></h2>
-  <h2><%= %></h2>
-  <h2><%= %></h2>
-  <h2><%= %></h2>
-  <h2><%= %></h2>
-  <h2><%= %></h2>
+  <% @params.each do |key, value| %>
+    <% if key == "name" %>
+      <h1><%= key %>: <%= value %></h1>
+    <% else %>
+      <h2><%= key %>: <%= value %></h2>
+    <% end %>
  </body>
 </html>
 
