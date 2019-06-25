@@ -5,14 +5,6 @@
   <title>Basketball Team</title>
  </head>
  <body>
-   
-   
-  <% params.each do |key, value| %>
-    <% if key == "name" %>
-      <h1><%= key %>: <%= value %></h1>
-    <% else %>
-      <h2><%= key %>: <%= value %></h2>
-    <% end %>
-  <% end %>
+   <h1>Team Name: <%= @name %></h1>
  </body>
 </html>
